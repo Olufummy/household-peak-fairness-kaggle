@@ -1,0 +1,10 @@
+data/
+outputs/
+*.csv.gz
+*.parquet
+*.pkl
+*.joblib
+*.json
+.ipynb_checkpoints/
+__pycache__/
+.env
