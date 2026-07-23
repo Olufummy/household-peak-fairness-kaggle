@@ -1,7 +1,11 @@
-numpy
-pandas
-scikit-learn
-xgboost
-lightgbm
-matplotlib
-seaborn
+
+# Tested analysis dependencies for the completed tabular models.
+# Create a clean virtual environment for python_packages.
+numpy==2.5.1
+scipy==1.18.0
+scikit-learn==1.9.0
+xgboost==3.3.0
+lightgbm==4.6.0
+matplotlib==3.11.1
+pandas==3.0.3
+seaborn==0.13.2
