@@ -19,6 +19,12 @@ flowchart LR
 
 The design prevents test leakage: the peak threshold was calculated from training data, the decision threshold is selected from validation data, and the test set is used only for final evaluation.
 
+IDEAL sensor data + historical Open-Meteo data
+                    ↓
+       supervised_95_features.csv.gz
+                    ↓
+      Kaggle modelling and fairness code
+
 ## Run it on Kaggle
 
 1. In Kaggle, create a **private Dataset** and upload `supervised_95_features.csv.gz` from the prepared-data folder of the main project. Do not make participant-level data public.
