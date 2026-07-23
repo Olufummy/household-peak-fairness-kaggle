@@ -19,11 +19,13 @@ flowchart LR
 
 The design prevents test leakage: the peak threshold was calculated from training data, the decision threshold is selected from validation data, and the test set is used only for final evaluation.
 
-## IDEAL sensor data + historical Open-Meteo data
+# IDEAL sensor data + historical Open-Meteo data
+
                     ↓
-##       supervised_95_features.csv.gz
+#       supervised_95_features.csv.gz
+
                     ↓
-##      Kaggle modelling and fairness code
+#      Kaggle modelling and fairness code
 
 
 
