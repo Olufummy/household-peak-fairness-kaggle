@@ -2,6 +2,15 @@
 
 This is the short, presentation-ready version of the dissertation analysis. The complete experiment is kept in **one Python file**: [`kaggle_household_peak_fairness.py`](kaggle_household_peak_fairness.py).
 
+## trying to check Class imbalance
+Check the class distribution:
+
+1. scale_pos_weight (XGBoost)
+2. is_unbalance=True (LightGBM)
+3. class_weight="balanced" (Random Forest)
+
+These often improve recall and F1 for minority classes
+
 ## What the code does
 
 It predicts whether a home's future electricity demand exceeds that home's **95th percentile training threshold**. It compares a 24-hour seasonal baseline with XGBoost and LightGBM, then checks whether model sensitivity differs across income, dwelling type and household size.
